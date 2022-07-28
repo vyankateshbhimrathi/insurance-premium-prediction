@@ -1,4 +1,4 @@
-from insurance.exception import HousingException
+from insurance.exception import InsuranceException
 import os, sys
 import yaml
 
@@ -12,4 +12,4 @@ def read_yaml_file(file_path:str)->dict:
             config_file_info = yaml.safe_load(yaml_file)
             return config_file_info
     except Exception as e:
-        raise HousingException (e,sys) from e
+        raise InsuranceException (e,sys) from e

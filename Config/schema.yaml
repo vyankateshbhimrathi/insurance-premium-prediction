@@ -1,0 +1,37 @@
+columns:
+  age: int
+  sex: object 
+  bmi: float
+  children: int
+  smoker: object 
+  region: object 
+  expenses: float
+
+numerical_columns:
+  - age
+  - bmi
+  - children
+  - expenses
+
+
+categorical_columns:
+  - sex
+  - smoker
+  - region
+
+
+target_column: expenses
+
+domain_value:
+  sex:
+    - male
+    - female
+  smoker:
+    - 'yes'
+    - 'no'
+  region:
+    - southeast
+    - southwest
+    - northwest
+    - northeast
+  

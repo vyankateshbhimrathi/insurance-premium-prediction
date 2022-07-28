@@ -5,7 +5,7 @@ from insurance.entity.artifact_entity import DataIngestionArtifact
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import StratifiedShuffleSplit
-from insurance.exception import HousingException
+from insurance.exception import InsuranceException
 from insurance.logger import logging
 
 
@@ -18,7 +18,7 @@ class DataIngestion:
             self.data_ingestion_config = data_ingestion_config
             
         except Exception as e:
-            raise HousingException(e,sys)
+            raise InsuranceException(e,sys)
 
     
     def split_data_as_train_test(self)-> DataIngestionArtifact:
@@ -64,14 +64,14 @@ class DataIngestion:
             return data_ingestion_artifact
 
         except Exception as e:
-            raise HousingException(e, sys) from e
+            raise InsuranceException(e, sys) from e
 
 
     def initiate_data_ingestion(self)-> DataIngestionArtifact:
         try:
             return self.split_data_as_train_test()
         except Exception as e:
-            raise HousingException(e, sys) from e
+            raise InsuranceException(e, sys) from e
     
     def __del__(self):
         logging.info(f"{'='*20}Data Ingestion log completed.{'='*20} \n\n")

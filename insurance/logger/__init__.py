@@ -3,7 +3,7 @@ from datetime import datetime
 from insurance.constant import get_current_time_stamp
 import os, sys
 import pandas as pd
-from insurance.exception import HousingException
+from insurance.exception import InsuranceException
 
 
 
@@ -41,4 +41,4 @@ def get_log_dataframe(file_path):
         return log_df[["log_message"]]
 
     except Exception as e:
-        raise HousingException(e, sys) from e
+        raise InsuranceException(e, sys) from e
