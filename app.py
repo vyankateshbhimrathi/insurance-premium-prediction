@@ -99,16 +99,11 @@ def predict():
     
 @app.route('/view_experiment_hist', methods=['GET', 'POST'])
 def view_experiment_history():
-    try:
-
-        experiment_df = Pipeline.get_experiments_status()
-        context = {
+    experiment_df = Pipeline.get_experiments_status()
+    context = {
         "experiment": experiment_df.to_html(classes='table table-striped col-12')
-        }
-        return render_template('experiment_history.html', context=context)
-
-    except Exception as e:
-        raise InsuranceException(e, sys) from e
+    }
+    return render_template('experiment_history.html', context=context)
 
 
 @app.route('/saved_models', defaults={'req_path': 'saved_models'})
