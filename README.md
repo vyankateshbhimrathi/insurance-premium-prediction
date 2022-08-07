@@ -24,7 +24,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-* Using Data Science and Machine learning, we can predict inurance premium for individuals based on health
+* Using Data Science and Machine learning, we can predict insurance premium for individuals based on health
 conditions and various personal details.
 * Building a **Flask App** hosted on **Heroku**.
 * **Sklearn** for pre-processing and Model Building
