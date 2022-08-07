@@ -31,7 +31,7 @@ conditions and various personal details.
 * Pandas, Numpy, Matplotlib for csv reading, Data Processing, Data Cleaning, Visualization etc.
 
 ## Deployed app
-[![Screenshot (10)]](https://insurance-premium-prem.herokuapp.com/)
+[![Screenshot (10)](https://github.com/vyankateshbhimrathi/insurance-premium-prediction/blob/main/insurance_premium.png)](https://insurance-premium-prem.herokuapp.com/)
 [LINK TO HEROKU APP](https://insurance-premium-prem.herokuapp.com/)
 
 <!-- GETTING STARTED -->
