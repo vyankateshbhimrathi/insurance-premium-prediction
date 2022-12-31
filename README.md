@@ -30,10 +30,6 @@ conditions and various personal details.
 * **Sklearn** for pre-processing and Model Building
 * Pandas, Numpy, Matplotlib for csv reading, Data Processing, Data Cleaning, Visualization etc.
 
-## Deployed app
-[![Screenshot (10)](https://github.com/vyankateshbhimrathi/insurance-premium-prediction/blob/main/insurance_premium.png)](https://insurance-premium-prem.herokuapp.com/)
-[LINK TO HEROKU APP](https://insurance-premium-prem.herokuapp.com/)
-
 <!-- GETTING STARTED -->
 ## Introduction
 *  The dataset for **Insurance Premium Prediction** is taken from **Kaggle**. The dataset contains 1338 observations (rows) and 7 features (columns). 
